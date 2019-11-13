@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/home/tomm/.local/share/virtualenvs/challenges-TrvYIRTO/bin/python",
+    "python.linting.pylintArgs": [
+        "--disable=C0103"
+      ],
+}
