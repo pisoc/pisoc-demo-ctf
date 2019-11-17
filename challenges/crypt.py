@@ -15,7 +15,7 @@ def handle_encrypt_mode(cleartext):
     # Apply rot13
     ciphertext = rot13(cleartext)
 
-    # Add an extra layer of security
+    # Reverse the ciphertext
     ciphertext = ciphertext[::-1]
 
     # Encode with base64
