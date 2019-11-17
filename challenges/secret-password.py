@@ -1,32 +1,27 @@
 #!/usr/bin/python3.6
 
+import codecs
 
-# Encrypt and decrypt passwords
-# Decrypt logic is missing
-# What's the password stored in the password.txt file, or this file?
-
-
-# def encrypt_password():
-#     pass
-
-
-# def decrypt_password():
-#     pass
-
+def apply_rot13(text):
+    # For an explanation:
+    # https://en.wikipedia.org/wiki/ROT13#Description
+    return  codecs.getencoder("rot-13")(text)[0]
 
 def handle_encrypt_mode():
+    # Get cleartext password from the user
     cleartext = input('Password: ')
 
-    # Switch to upper case
-    ciphertext = cleartext.upper()
+    # Apply top-secret rot13 encryption algorithm
+    ciphertext = apply_rot13(cleartext)
 
-    # Reverse the string
+    # Add an extra layer of security
     ciphertext = ciphertext[::-1]
 
+    # Display the encrypted password
     print(ciphertext)
 
-
 def handle_decrypt_mode():
+    # Code has been removed  
     pass
 
 
